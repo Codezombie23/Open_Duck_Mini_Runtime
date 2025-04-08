@@ -194,6 +194,10 @@ class RLWalk:
         kps = [self.pid[0]] * 14
         kds = [self.pid[2]] * 14
 
+        # low kp ankles
+        kps[4] = 2.0
+        kps[13] = 2.0
+
         self.hwi.set_kps(kps)
         self.hwi.set_kds(kds)
         self.hwi.turn_on()
